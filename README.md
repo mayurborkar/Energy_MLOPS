@@ -27,3 +27,9 @@ dvc init
 ```bash
 dvc add data_given/EnergyData.csv
 ```
+```bash
+git add . && git commit -m "First Commit" && git branch -M main
+```
+```bash
+git remote add origin https://github.com/mayurborkar/Energy_MLOPS.git && git push origin main
+```
