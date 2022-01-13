@@ -16,3 +16,19 @@ stages:
     - path: data\raw\EnergyData.csv
       md5: a05db93d71d558b94bd0094ea5bb527d
       size: 37065
+  split_data:
+    cmd: python src\split_data.py --config=params.yaml
+    deps:
+    - path: data\raw\EnergyData.csv
+      md5: a05db93d71d558b94bd0094ea5bb527d
+      size: 37065
+    - path: src\split_data.py
+      md5: 5ae95f1bc5badf776e0fa16fad144a27
+      size: 1107
+    outs:
+    - path: data\processed\test_EnergyData.csv
+      md5: c68736bb4bce06764b8a65d2778be4a1
+      size: 7539
+    - path: data\processed\train_EnergyData.csv
+      md5: c6915d18f4370bf1ec4169fcaff0e03c
+      size: 29673

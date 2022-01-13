@@ -9,7 +9,7 @@ stages:
     - data\raw\EnergyData.csv
 
   split_data:
-    cmd: python src\load_data.py --config=params.yaml
+    cmd: python src\split_data.py --config=params.yaml
     deps:
     - src\split_data.py
     - data\raw\EnergyData.csv
