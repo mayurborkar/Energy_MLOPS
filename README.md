@@ -37,4 +37,8 @@ git remote add origin https://github.com/mayurborkar/Energy_MLOPS.git && git pus
 
 ## 6. Create Python File Including Reading Data To Model Building Inside src Folder
 
-## 7. 
+## 7. Side By Side Fill Up The dvc.yaml File With The Stage Name & Execute The Below Command
+```bash
+dvc repro
+```
+## 8. 
