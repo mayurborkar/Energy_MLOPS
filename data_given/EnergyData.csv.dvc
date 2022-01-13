@@ -1,0 +1,4 @@
+outs:
+- md5: 50cf52a02c2de40a1513827af21ef16b
+  size: 37224
+  path: EnergyData.csv
