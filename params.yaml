@@ -1,8 +1,8 @@
 base:
   project: Energy-Efficiency
   random_state: 42
-  target_col_1: heating_load
-  target_col_2: cooling_load
+  target_col1: heating_load
+  target_col2: cooling_load
 
 data_source:
   s3_source: data_given\EnergyData.csv
@@ -18,11 +18,15 @@ split_data:
 estimators:
   RandomForestRegressor:
     params:
-      n_estimators = 350
-      max_features = 2
-      max_depth= 85
-      bootstrap= True
+      max_depth: 85
+      max_features: 2
+      n_estimators: 350
+      # bootstrap= True
 
+  Ridge:
+    params:
+      alpha=0.1
+      
 model_dir: saved_model
 
 reports:
