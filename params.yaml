@@ -1,0 +1,30 @@
+base:
+  project: Energy-Efficiency
+  random_state: 42
+  target_col_1: heating_load
+  target_col_2: cooling_load
+
+data_source:
+  s3_source: Energy_MLOPS\data_given\EnergyData.csv
+
+load_data:
+  raw_dataset_csv: Energy_MLOPS\data\raw\EnergyData.csv
+
+split_data:
+  train_path: Energy_MLOPS\data\processed\train_EnergyData.csv
+  test_path: Energy_MLOPS\data\processed\test_EnergyData.csv
+  test_size: 0.2
+
+estimators:
+  RandomForestRegressor:
+    params:
+      n_estimators = 350
+      max_features = 2
+      max_depth= 85
+      bootstrap= True
+
+model_dir: saved_model
+
+reports:
+  params: reports\params.json
+  scores: reports\scores.json
