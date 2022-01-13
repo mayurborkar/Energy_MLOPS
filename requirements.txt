@@ -1,0 +1,8 @@
+dvc
+dvc[gdrive]
+gunicorn
+sklearn
+pandas
+pytest
+flake8
+flask
