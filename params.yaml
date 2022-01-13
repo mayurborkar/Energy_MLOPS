@@ -5,14 +5,14 @@ base:
   target_col_2: cooling_load
 
 data_source:
-  s3_source: Energy_MLOPS\data_given\EnergyData.csv
+  s3_source: data_given\EnergyData.csv
 
 load_data:
-  raw_dataset_csv: Energy_MLOPS\data\raw\EnergyData.csv
+  raw_dataset_csv: data\raw\EnergyData.csv
 
 split_data:
-  train_path: Energy_MLOPS\data\processed\train_EnergyData.csv
-  test_path: Energy_MLOPS\data\processed\test_EnergyData.csv
+  train_path: data\processed\train_EnergyData.csv
+  test_path: data\processed\test_EnergyData.csv
   test_size: 0.2
 
 estimators:

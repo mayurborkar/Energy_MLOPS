@@ -33,3 +33,8 @@ git add . && git commit -m "First Commit" && git branch -M main
 ```bash
 git remote add origin https://github.com/mayurborkar/Energy_MLOPS.git && git push origin main
 ```
+## 5. Write down the params.yaml File As Your Configuration File
+
+## 6. Create Python File Including Reading Data To Model Building Inside src Folder
+
+## 7. 
