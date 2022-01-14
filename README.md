@@ -41,4 +41,38 @@ git remote add origin https://github.com/mayurborkar/Energy_MLOPS.git && git pus
 ```bash
 dvc repro
 ```
-## 8. 
+## 8. TO Check The Difference In Score You Can See It By Below Command
+```bash
+dvc metrics diff
+```
+## 9. To Check THe Metrics You Can Used
+```bash
+dvc metrics show
+```
+## 10. Tox Can Create The Virtual Env For Testing Purpose. So Create The Tox File 
+```bash
+touch tox.ini
+```
+## 11. Then Create The tests Folder and Create The File Inside That
+```bash
+mkdir tests
+```
+```bash
+touch tests/conftest.py tests/test_config.py tests/__init__.py
+```
+## 12. After Write It Down Test Code In test_config.py File Execute Below Command
+```bash
+tox
+```
+## 13. If You Update Requirements File You Can Execute Below Command
+```bash
+tox -r
+```
+## 14. To Execute The Setup.py File
+```bash
+pip install -e .
+```
+## 15. To Create The Package of You src File For That
+```bash
+python setup.py sdist bdist_wheel
+```

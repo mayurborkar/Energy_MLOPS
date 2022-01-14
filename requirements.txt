@@ -6,3 +6,4 @@ pandas
 pytest
 flake8
 flask
+tox
