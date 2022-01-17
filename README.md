@@ -2,6 +2,9 @@
 
 ## All The Command Write In Bash Terminal
 
+## Front Page
+![img_2.png](img\Screenshot (50).png)
+
 ## 1. Create Conda Env In Current Local Disk
 ```bash
 conda create --prefix ./env python=3.7 -y
