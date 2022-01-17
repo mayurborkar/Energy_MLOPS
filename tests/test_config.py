@@ -23,7 +23,7 @@ input_data = {
     "surface_area": 555.5, 
     "wall_area": 350.5, 
     "roof_area": 210.5, 
-    "overall_height": 12, 
+    "overall_height":4.5, 
     "orientation": 4.0, 
     "glazing_area": 0.3, 
     "glazing_area_distribution": 4.0, 
