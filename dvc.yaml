@@ -27,11 +27,16 @@ stages:
       - estimators.RandomForestRegressor.params.max_depth
       - estimators.RandomForestRegressor.params.max_features
       - estimators.RandomForestRegressor.params.n_estimators
-    metrics:
-      - reports\scores.json:
-          cache: false
-      - reports\params.json:
-          cache: false
-    outs:
-      - saved_model\model.joblib
-      - saved_model\model2.joblib
+    # metrics:
+    #   - reports\scores.json:
+    #       cache: false
+    #   - reports\params.json:
+    #       cache: false
+    # outs:
+    #   - saved_model\model.joblib
+    #   - saved_model\model2.joblib
+
+  # log_production_model:
+  #   cmd: python src\log_production_model.py --config=params.yaml
+  #   deps:
+  #     - src/log_production_model.py
